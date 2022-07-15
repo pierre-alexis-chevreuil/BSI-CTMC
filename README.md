@@ -1,7 +1,7 @@
 This set of codes computes individual electron trajectories in the Barrier-Suppression Ionisation (BSI) regime.
 It is entirely based on Matlab codes. However, because of the large number of electrons needed to obtain statistical convergence of the results, the codes using the most CPU time have been optimised to be converted into binaries (MEX-files), see https://ch.mathworks.com/help/matlab/call-mex-file-functions.html.
-The "Functions" folder contains all the necessary functions to execute the main code. All functions having "%#codgen" are meant to be converted to MEX-files. Switching between non-compiled and MEX files can be done by changing the variable "params.use_mex" from 0 to 1.
-The "Examples" folder is meant to show how the different sub-functions (electric field propagation in waveplates, ionisationa and electron trajectories propagation) can be used. It is also to be meant for the creation of the individual MEX files.
+The "Functions" folder contains all the necessary functions to execute the main code. All functions having "%#codegen" are meant to be converted to MEX-files. Switching between non-compiled and MEX files can be done by changing the variable "params.use_mex" from 0 to 1 in main_CTMC.m.
+The "Examples" folder shows how the different sub-functions (electric field propagation in waveplates, ionisation and electron trajectories propagation) can be used. It is also to be meant for the creation of the individual MEX files.
 
 Author: Pierre-Alexis Chevreuil, ETH Zurich (chpierre@phys.ethz.ch)
 
