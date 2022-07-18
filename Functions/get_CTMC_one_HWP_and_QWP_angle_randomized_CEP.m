@@ -8,7 +8,7 @@ function res_CTMC = get_CTMC_one_HWP_and_QWP_angle_randomized_CEP(params)
 % Author: Pierre-Alexis Chevreuil (chpierre@phys.ethz.ch)
 
 list_CEPs               = params.CEP;
-params.numTrajectories  = round(params.numTrajectories / numel(numel(params.CEP)));
+params.numTrajectories  = round(params.numTrajectories / numel(params.CEP));
 
 params.CEP              = list_CEPs(1);
 res_CTMC                = get_CTMC_one_HWP_and_QWP_angle(params);
